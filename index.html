@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Signup Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="background-image">
+            <div class="logo">Jeongyeon</div>
+            <img src="jeongyeon.jpg" alt="Beautiful Jeongyeon of Twice">
+        </div>
+        <div class="forms">
+            <div style="margin-left: 10px;" class="forms-header">
+                Some text that is supposed to make you Signup to Jeongyeon's fan club
+            </div>
+            <div class="forms-body">
+                <form class="form" action="" method="post">
+                    <div class="forms-row">
+                        <div class="form-element">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" name="firstname" pattern="^[A-Za-z]*$" required minlength="1" maxlength="30">
+                        </div>
+                        <div class="form-element">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" name="lastname" pattern="^[A-Za-z]*$" required minlength="1" maxlength="30">
+                        </div>
+                    </div>
+                    <div class="forms-row">
+                        <div class="form-element">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-element">
+                            <label for="phonenumber">PHONE NUMBER</label>
+                            <input type="number" name="phonenumber" required min="1000000000" max="9999999999">
+                        </div>
+                    </div>
+                    <div class="forms-row">
+                        <div class="form-element">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" required>
+                        </div>
+                        <div class="form-element">
+                            <label for="confirmpassword">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmpassword" required>
+                            <p id="password-warning"></p>
+                        </div>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+            <div style="margin-left: 10px;" class="forms-footer">
+                If you have an account then <a href="login">Log In</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
